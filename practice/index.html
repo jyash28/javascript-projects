@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Practice.</h1>
+    <button onclick="button()">Click me</button>
+
+    <script>
+        document.write("Hello World");
+        console.log("Hello World");
+     //   alert("Hello World");
+
+        // Variables
+
+        // var a = "Yash";
+        // console.log(a);
+
+        // let a1 = "Yash"
+        // console.log(a1);
+
+        // a1="yash";
+        // console.log(a1);
+
+        // const a2 = "Yash Jangid"
+        // console.log(a2);
+
+        // a2 = "yash"
+        // console.log(a2);
+
+        // Typeof operators
+
+        var a3 = "Yash";
+        console.log(typeof(a3));
+
+        var a4 = true;
+        console.log(typeof(a4));
+
+        // Airthmetic Operators 
+
+         var a5 = 3;
+         var a6 = 6;
+
+        // console.log(a5 + a6);
+        // console.log(a5 - a6);
+        // console.log(a5 ** a6);
+        // console.log(a5 / a6);
+
+        // a5++;
+        // console.log(a5);
+
+        // Assignment Operators
+
+        a5 += a6;
+        console.log(a5);
+
+        // Comparison Operators
+
+        const age = 18;
+
+        if(age > 18){
+            console.log("You can drive the car");
+        }else if(age == 18){
+            console.log("You can drive scootey");
+        }else{
+            console.log("You can not drive");
+        }
+
+        // Logical Operators
+
+        const age1 = 18;
+        const age2 = 25;
+
+        if(age1 >=18 || age2 <= 24){
+            console.log("You can drive the car");
+        }else{
+            console.log("You can not drive the car");
+        }
+
+        switch (new Date().getDay()) {
+  case 0:
+    console.log ( "Sunconsole.log");
+    break;
+  case 1:
+    console.log ("Monconsole.log");
+    break;
+  case 2:
+     console.log ( "Tuesconsole.log");
+    break;
+  case 3:
+    console.log ( "Wednesconsole.log");
+    break;
+  case 4:
+    console.log ( "Thursconsole.log");
+    break;
+  case 5:
+    console.log ("Friconsole.log");
+    break;
+  case 6:
+    console.log ( "Saturconsole.log");
+}
+
+const date = new Date().getDay();
+
+console.log(date);
+
+// var a7 = confirm("Do you like it");
+
+// if(a7){
+//     alert("Thanks")
+// }else{
+//     alert("Sorry");
+// }
+
+   // Functions
+
+//    function hello(){
+//        var i;
+//        for(i = 0; i <10 ; i++){
+//            console.log(i);
+//        }
+//    }
+
+//    hello();
+
+//    function sum(a, b){
+//        var c = a + b;
+//        return c;
+//    }
+
+//    console.log("The sum is" + sum(2, 4));
+
+    const sumOne = a => console.log("Hello Function");
+
+    sumOne();
+
+//    function button(){
+//        alert("Hello yash jangid");
+//    }
+
+//    var a8 = 1;
+
+//    do{
+//        console.log("This is Hello World");
+//        a8 ++;
+//    }while(a8 < 5)
+
+//    // Even odd
+
+//    var a9 = 1;
+
+//    for(a9=1; a9 < 100; a9++){
+//        if(a9%2 != 0){
+//            console.log(a9);
+//        }else{
+//            console.log(a9);
+//        }
+//    }
+
+   // Array
+
+//    var array = [10, 20, 30, 40, 50];
+
+//    console.log(array);
+//    console.log(array[0]);
+
+//    for(var i=0; i <= 4; i++){
+//        console.log(array[i]);
+//    }
+
+//    var ary = new Array();
+//    ary[0] = 10;
+//    console.log(ary);
+
+//    var ary1 = new Array(3);
+
+//    for(var i = 0; i < 3; i++ ){
+//        ary1[i] = prompt("Enter the value of array");
+//    }
+
+//    console.log(ary1);
+
+   var activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+];
+
+console.table(activities);
+
+delete activities[1]
+console.log(activities);
+
+var ary2 = ["Yash", "Jangid", "Utsav"];
+
+console.log(ary2);
+
+ary2.reverse();
+console.log(ary2);
+
+ary2.sort();
+console.log(ary2);
+
+ary2.push("Chotu");
+console.log(ary2);
+
+ary2.pop();
+console.log(ary2);
+
+ary2.shift();
+console.log(ary2);
+
+ary2.unshift("Chotu");
+console.log(ary2);
+
+var ary3 = ["Yash", "Jangid", "Utsav"];
+
+console.log(ary3);
+
+var ary4 = ary2.concat(ary3);
+console.log(ary4);
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3);
+
+console.log(citrus);
+
+var myBest = fruits.slice(-3, -1);
+
+console.log(myBest);
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+console.log(fruits);
+
+var a = fruits.indexOf("Apple");
+console.log(a);
+
+var array2 = [2, 4, 5, 7, 8 ,9, 0];
+
+array2.forEach((value) =>{
+  console.log(value);
+})
+
+array2.map((value) =>{
+  console.log(value);
+})
+
+var a1 = fruits.lastIndexOf("Apple");
+console.log(a1);
+
+
+    </script>
+</body>
+</html>
